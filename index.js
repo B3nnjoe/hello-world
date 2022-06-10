@@ -1,6 +1,6 @@
-exports = function (language: String) {
+exports.helloWorld = function (language) {
   //languages
-  const languages: Array<any> = [
+  const languages = [
     {
       lang: 'c',
       solution: 'printf("Hello World\n");',
