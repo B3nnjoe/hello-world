@@ -1,6 +1,6 @@
-# Hello World In Diffrent Langs
+# Hello World In Different Langs
 
-With this advanced package you can get how to print hello world in diffrent languages.
+With this advanced package you can get how to print hello world in different languages.
 
 ### Installation
 
