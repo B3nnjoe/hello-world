@@ -12,7 +12,7 @@ npm install @bennjoe/hello-world
 ### Usage
 
 ```ts
-const helloWorld = require('@bennjoe/hello-world')
+const {helloWorld} = require('@bennjoe/hello-world')
 
 console.log(helloWorld('c++'))
 ```
