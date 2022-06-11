@@ -12,14 +12,20 @@ npm install @bennjoe/hello-world
 ### Usage
 
 ```ts
-const {helloWorld} = require('@bennjoe/hello-world')
+const helloWorld = require('@bennjoe/hello-world');
 
-console.log(helloWorld('c++'))
+// returns the hello-world for c++
+console.log(helloWorld('c++'));
+// returns the hello-world for all languages supported
+console.log(helloWorld('all'));
+
 ```
 
 ### Supported languages
 
 **C++, C#, C, JavaScript, Java, TypeScript, Rust, Haskell, Elm, Elexir, Swift, Go, Clojure, Kotlin, Php, Python, Ruby, Scala**
+
+You can also pass in the parameter **"all"** to get all the languages in an array.
 
 ### Contributors
 

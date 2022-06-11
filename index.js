@@ -1,4 +1,5 @@
-exports = function (language) {
+
+module.exports = function helloWorld(language) {
   const languages = [
     {
       lang: 'c',
@@ -73,6 +74,15 @@ exports = function (language) {
       solution: 'println("Hello World!")',
     },
   ];
-  return languages.find(l => l.lang == language.toLowerCase())
-    ?.solution ?? "language not found"
-};
+  if (!language) return new Error('Language can\'t be null!')
+
+  if (language === 'all') return languages.map(lang => { return ({ language: lang.lang, helloWorld: lang.solution }) });
+
+  return languages.find(l =>
+    l.lang == language.toLowerCase()
+  )
+    ?.solution ?? new Error("language not found")
+}
+
+
+
