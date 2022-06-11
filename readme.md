@@ -17,3 +17,13 @@ const helloWorld = require('@bennjoe/hello-world')
 console.log(helloWorld('c++'))
 ```
 
+### Supported languages
+
+**C++, C#, C, JavaScript, Java, TypeScript, Rust, Haskell, Elm, Elexir, Swift, Go, Clojure, Kotlin, Php, Python, Ruby, Scala**
+
+### Contributors
+
+
+**All contributors are welcome!**
+
+Feel free to add more supported languages.😄

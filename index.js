@@ -1,5 +1,4 @@
-exports.helloWorld = function (language) {
-  //languages
+exports = function (language) {
   const languages = [
     {
       lang: 'c',
@@ -74,14 +73,6 @@ exports.helloWorld = function (language) {
       solution: 'println("Hello World!")',
     },
   ];
-
-  // The result
-  let result = 'error: Language not supported';
-  // Loops trough all langs and sets the result to the langauges solution
-  languages.forEach((lang) => {
-    if (lang.lang === language.toLowerCase()) {
-      result = lang.solution;
-    }
-  });
-  return result;
+  return languages.find(l => l.lang == language.toLowerCase())
+    ?.solution ?? "language not found"
 };
